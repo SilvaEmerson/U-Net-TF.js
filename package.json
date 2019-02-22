@@ -1,0 +1,14 @@
+{
+  "name": "U-Net",
+  "version": "1.0.0",
+  "description": "U-Net TF.js implementation",
+  "main": "model.js",
+  "author": "Émerson Silva",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^0.3.0"
+  },
+  "scripts": {
+    "start": "node model.js"
+  }
+}
