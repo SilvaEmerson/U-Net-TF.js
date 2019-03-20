@@ -44,7 +44,7 @@ const conv10 = genConv2D(1024).apply(conv9);
 const up1 = genUp2D().apply(conv10);
 const merge1 = tf.layers.concatenate({ axis: 3 }).apply([up1, conv8]);
 
-//First part (down climb)
+//Second part (up climb)
 const conv11 = genConv2D(512).apply(merge1);
 const conv12 = genConv2D(512).apply(conv11);
 const up2 = genUp2D().apply(conv12);
